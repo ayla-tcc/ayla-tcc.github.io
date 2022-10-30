@@ -1,0 +1,45 @@
+.div-campo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: top;
+  max-width: 1000px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  gap: 40px;
+}
+input::placeholder {
+  font-family: "JetBrains Mono", monospace;
+}
+
+label {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.84);
+}
+
+input,
+select {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  margin: 10px auto;
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.21);
+}
+
+@media screen and (max-width: 600px) {
+  .div-campo {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  input,
+  select {
+    width: 95%;
+  }
+}
+
+mw {
+  width: 100%;
+}

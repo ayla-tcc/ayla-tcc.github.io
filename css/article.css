@@ -1,0 +1,8 @@
+article {
+  max-width: 1000px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: left;
+  align-items: center;
+}

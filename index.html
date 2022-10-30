@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@600&family=Manrope:wght@700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Ayla - QR-Code</title>
+</head>
+<body>
+  <header>
+    <img class="header-menu" src="./imgs/Logo.svg" alt="Ayla" width="122" height="63">
+  </header>
+  <main>
+    <article>
+      <h1 class="margin-b_0 titulo margin-t_0">Seja bem-vindo!</h1>
+      <p class="margin-t_0 subtitulo">Preencha com os seus ou os dados do paciente</p>
+    </article>
+    <div class="div-campo">
+      <div class="campo">
+        <label for="Name">Nome:</label>
+        <br>
+        <input id="name" type="text">
+        <br>
+        <label for="CPF">CPF:</label>
+        <br>
+        <input id="cpf" type="text" placeholder="000.000.000-00">
+        <br>
+        <label for="resp">Nome do responsavel:</label>
+        <br>
+        <input id="resp" type="text">
+        <br>
+      </div>
+      <div class="campo">
+        <label for="genre">Gênero: </label>
+        <br>
+        <select name="genre" id="genre">
+          <option value="none">Selecione um gênero</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+          <option value="agénero">Agénero</option>
+        </select>
+        <br>
+        <label for="birth">Data de Nascimento:</label>
+        <br>
+        <input id="date" type="date">
+        <br>
+        <label for="birth">Indique onde é o ponto de sua dor:</label>
+        <br>
+        <select name="dor" id="dor">
+          <option value="none">Selecione o local da dor</option>
+          <option value="cabeca">Cabeça</option>
+          <option value="peito">Abdomen</option>
+          <option value="barriga">Barriga</option>
+        </select>
+        </ul>
+        
+      </div>
+    </div>
+    <button onclick="apiSend()" id="btn">Clique aqui para <strong>continuar</strong> </button>
+    <div>
+      <span id="qrimage"></span>
+    </div>
+  </main>
+  <script src="./script.js">
+  </script>
+</body>
+</html>
