@@ -22,7 +22,7 @@ function apiSend() {
   let genre = document.querySelector("#genre").value;
   let date = document.querySelector("#date").value;
   let dor = document.querySelector("#dor").value;
-  var url = "http://192.168.136.41:8000/env/";
+  var url = "http://127.0.0.1:8000/env/";
   var dados = url + nome + "$&" + cpf + "&" + resp + "-" + genre + "-" + dor;
   console.log(dados)
 
